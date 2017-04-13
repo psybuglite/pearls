@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron')
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab')
+@import url('https://fonts.googleapis.com/css?family=Spirax')
+@import url('https://fonts.googleapis.com/css?family=Merienda')
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two')
+
+body
+  margin: 0 auto
+  background-image: url(../img/hero-3.jpg)
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  background-attachment: fixed
+
+  header
+    .logo
+      float: left
+      margin-top: 20px
+
+    .search
+      float: right
+      padding-top: 30px
+
+      input[type=text]
+        width: 150px
+        box-sizing: border-box
+        border: 2px solid #ccc
+        border-radius: 30px
+        font-size: 14px
+        background-color: white
+        padding: 12px 20px 12px 40px
+        -webkit-transition: width 0.4s ease-in-out
+        transition: width 0.4s ease-in-out
+        outline: none
+
+      input[type=text]:focus
+          width: 100%
+
+    @media screen and (max-width: 480px)
+      .search
+        input[type=text]
+          width: 100px
+          font-size: 12px
+          padding: 6px 10px 6px 20px
+
+  .navbar
+    clear: both
+    margin-bottom: 0
+
+  .logo
+    margin: 0 auto
+    height: 80px
+
+  .navbar-toggle
+    .icon-bar:nth-of-type(2)
+	    top: 1px
+
+  .navbar-toggle
+    .icon-bar:nth-of-type(3)
+  	  top: 2px
+
+  .navbar-toggle
+    .icon-bar
+  	  position: relative
+  	  transition: all 500ms ease-in-out
+
+  .navbar-toggle.active
+    .icon-bar:nth-of-type(1)
+      top: 6px
+      transform: rotate(45deg)
+
+
+  .navbar-toggle.active
+    .icon-bar:nth-of-type(2)
+  	  background-color: transparent
+
+  .navbar-toggle.active .icon-bar:nth-of-type(3)
+  	top: -6px
+  	transform: rotate(-45deg)
+
+  ul
+    li
+      list-style: none
+      display: inline-block
+      padding-left: 20px
+      font-family: 'Merienda', cursive
+
+      a:hover
+        text-decoration: none
+
+  .hero
+    height: 80vh
+    margin-top: 0
+
+    h1
+      font-size: 5em
+      font-family: 'Spirax', cursive
+      font-style: italic
+      padding-top: 80px
+      padding-bottom: 30px
+
+    @media screen and (max-width: 500px)
+      h1
+        padding-top: 30px
+
+    button
+      padding: 10px 40px
+      border: 2px black solid
+      display: block
+      margin: 0 auto
+      outline: none
+      background-color: #fbf1f0
+      color: black
+      font-size: 15px
+      font-family: 'Merienda', cursive
+      border-radius: 40px
+
+    button:hover
+      background-color: #d93172
+      transition: 500ms
+      color: white
+
+  .gallery
+    background-color: #fff
+    height: 130vh
+    overflow: auto
+
+    p
+      font-size: 0.9em
+      font-family: 'Merienda', cursive
+
+    h1
+      font-size: 5em
+      font-family: 'Spirax', cursive
+      font-style: italic
+      padding-top: 80px
+      padding-bottom: 30px
+
+    @media screen and (max-width: 500px)
+      h1
+        padding-top: 30px
+
+  footer
+    background: #222222
+    color: #ccc
+    font-family: 'Merienda', cursive
+
+    .bottom-box
+      padding-bottom: 10px
+
+    @media screen and (max-width: 767px)
+      .bottom-box
+        border-bottom: 1px white dotted
+
+    p
+      font-size: 0.9em
+
+    .about
+      a
+        color: #d93172
+
+      a:hover
+        text-decoration: none
+        color: #fbf1f0
+
+    .socials
+      margin: 0 auto
+
+      .facebook:hover
+        color: #3b5998
+        transition: 0.8s
+        cursor: pointer
+
+      .instagram:hover
+        color: purple
+        transition: 0.5s
+        cursor: pointer
+
+      .twitter:hover
+        color: #0084b4
+        transition: 0.5s
+        cursor: pointer
+
+      .youtube:hover
+        color: #c4302b
+        transition: 0.5s
+        cursor: pointer
+
+      .fa
+        font-size: 30px
+        padding: 0px 14px
