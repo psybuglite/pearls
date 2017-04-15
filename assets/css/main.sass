@@ -4,13 +4,8 @@
 @import url('https://fonts.googleapis.com/css?family=Merienda')
 @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two')
 
-body
+*
   margin: 0 auto
-  background-image: url(../img/hero-3.jpg)
-  background-position: center center
-  background-repeat: no-repeat
-  background-size: cover
-  background-attachment: fixed
 
   header
     .logo
@@ -24,7 +19,7 @@ body
       input[type=text]
         width: 150px
         box-sizing: border-box
-        border: 2px solid #ccc
+        border: 1px solid #000
         border-radius: 30px
         font-size: 14px
         background-color: white
@@ -83,14 +78,23 @@ body
       list-style: none
       display: inline-block
       padding-left: 20px
+      margin: 0 auto
       font-family: 'Merienda', cursive
 
       a:hover
         text-decoration: none
 
   .hero
+    overflow: auto
     height: 80vh
     margin-top: 0
+    background-image: url(../img/hero-3.jpg)
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+
+    a:hover
+      text-decoration: none
 
     h1
       font-size: 5em
@@ -120,30 +124,13 @@ body
       transition: 500ms
       color: white
 
-  .gallery
-    background-color: #fff
-    height: 130vh
-    overflow: auto
-
-    p
-      font-size: 0.9em
-      font-family: 'Merienda', cursive
-
-    h1
-      font-size: 5em
-      font-family: 'Spirax', cursive
-      font-style: italic
-      padding-top: 80px
-      padding-bottom: 30px
-
-    @media screen and (max-width: 500px)
-      h1
-        padding-top: 30px
-
   footer
     background: #222222
     color: #ccc
     font-family: 'Merienda', cursive
+
+    .copyright
+      padding: 20px 0px
 
     .bottom-box
       padding-bottom: 10px
@@ -189,3 +176,72 @@ body
       .fa
         font-size: 30px
         padding: 0px 14px
+
+  .gallery
+    background-color: #fff
+    height: 130vh
+    overflow: auto
+
+    p
+      font-size: 0.9em
+      font-family: 'Merienda', cursive
+
+    h1
+      font-size: 5em
+      font-family: 'Spirax', cursive
+      font-style: italic
+      padding-top: 80px
+      padding-bottom: 30px
+
+    @media screen and (max-width: 500px)
+      h1
+        padding-top: 30px
+
+  #contact
+    background-color: #fff
+    height: 130vh
+    overflow: auto
+
+    p
+      font-size: 0.9em
+      font-family: 'Merienda', cursive
+
+    h1
+      font-size: 5em
+      font-family: 'Spirax', cursive
+      font-style: italic
+      padding-top: 80px
+      padding-bottom: 30px
+
+    @media screen and (max-width: 500px)
+      h1
+        padding-top: 30px
+
+  #about
+    background-color: #fff
+    overflow: auto
+    padding: 50px 0px
+
+    img
+      width: 100%
+      border-radius: 5px
+      -webkit-box-shadow: 10px 14px 19px 0px rgba(173,173,173,0.5)
+      -moz-box-shadow: 10px 14px 19px 0px rgba(173,173,173,0.5)
+      box-shadow: 10px 14px 19px 0px rgba(173,173,173,0.5)
+
+    p
+      font-size: 1.2em
+      font-family: 'Merienda', cursive
+
+    @media screen and (max-width: 500px)
+      font-size: 0.9em
+
+    h3
+      font-size: 3em
+      font-family: 'Spirax', cursive
+      font-style: italic
+      color: #d93172
+
+    @media screen and (max-width: 500px)
+      h1
+        padding-top: 30px
