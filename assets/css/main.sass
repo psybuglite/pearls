@@ -199,8 +199,23 @@
 
   #contact
     background-color: #fff
-    height: 130vh
     overflow: auto
+    padding-bottom: 50px
+
+    #map
+      width: 700px
+      height: 400px
+      padding-top: 20px
+
+    @media screen and (max-width: 720px)
+      #map
+        width: 500px
+        height: 275px
+
+    @media screen and (max-width: 520px)
+      #map
+        width: 280px
+        height: 200px
 
     p
       font-size: 0.9em
@@ -212,6 +227,17 @@
       font-style: italic
       padding-top: 80px
       padding-bottom: 30px
+
+    h3
+      font-size: 3em
+      font-family: 'Merienda', cursive
+      padding-bottom: 10px
+
+    h4
+      font-size: 1em
+      font-family: 'Merienda', cursive
+      padding-top: 10px
+      padding-bottom: 10px
 
     @media screen and (max-width: 500px)
       h1

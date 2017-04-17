@@ -52,8 +52,54 @@
 
 
 <section id="contact">
-  <h1 class="text-center">Oops!</h1>
-  <p class="text-center">Work in progress. We're not done yet. Go Back to the <a href="index.html">homepage</a></p>
+
+
+<div class="container" align="center">
+
+  <div class="row">
+    <div class="col-sm-12">
+
+      <h1>Contact Us</h1>
+
+
+      <div class="col-sm-4">
+        <h3>Store Hours</h3>
+        <p><b>Mondays - Thursdays : 9am - 4pm</b></p>
+        <p><b>Saturdays : 8am - 5pm<b/></p>
+        <br>
+        <p>We would love to hear from you.</p>
+        <h4>Send us an e-mail</h4>
+        <h4><b>baker@pearls.com</b></h4>
+        <br>
+        <h4>+234 (0) XXX XXX XXXX</4>
+
+        <br>
+        <br>
+        <h4>Address : Pastry Shop by the Mall</h4>
+        <h4>Spar Mall</h4>
+      </div>
+      <div class="col-sm-8" id="map">
+          <script>
+          function initMap() {
+            var uluru = {lat: 4.775535, lng: 7.012998};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 8,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+        </script>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
 </section>
 
 
@@ -91,6 +137,7 @@
   </div>
 </footer>
 
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOtKLvLRf2XNHGU5SeV-qwZr7g2KPEdeI&callback=initMap"></script>
 <script src="assets/js/jquery-2.1.4.min.js" type="text/javascript"></script>
 <script src="assets/js/functions.js" type="text/javascript"></script>
 </body>
